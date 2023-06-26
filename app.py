@@ -142,9 +142,9 @@ img_Continental = Image.open("images/Continental.png")
 # img_dac2 = Image.open("images/dac2.png")
 
 images_BI_Dashboard = Image.open("images/BI_Dashboard.PNG")
-images_cert_1 = Image.open("images/certi_1.png")
-images_news = Image.open("images/news.png")
-images_tableau = Image.open("images/tableau.png")
+images_cert_1 = Image.open("images/certi_1.PNG")
+images_news = Image.open("images/news.PNG")
+images_tableau = Image.open("images/tableau.PNG")
 # # Assets for gallery
 # # 2005
 # img_2005_1 = Image.open("gallery/2005_1.jpg")
