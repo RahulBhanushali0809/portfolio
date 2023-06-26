@@ -87,7 +87,7 @@ def pdf_link(pdf_url, link_text="Click here to view PDF"):
 #lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 # Assets for about me
 img_utown = Image.open("images/4.jpeg")
-img_lh = Image.open("images/1.jpg")
+img_lh = Image.open("images/1.JPG")
 img_3 = Image.open("images/3.jpeg")
 
 #Assets for competitions
@@ -141,10 +141,10 @@ img_Continental = Image.open("images/Continental.png")
 # img_dac1 = Image.open("images/dac1.png")
 # img_dac2 = Image.open("images/dac2.png")
 
-images_BI_Dashboard = Image.open("images/BI_Dashboard.PNG")
-images_cert_1 = Image.open("images/certi_1.PNG")
-images_news = Image.open("images/news.PNG")
-images_tableau = Image.open("images/tableau.PNG")
+images_BI_Dashboard = Image.open("images/BI_Dashboard.png")
+images_cert_1 = Image.open("images/certi_1.png")
+images_news = Image.open("images/news.png")
+images_tableau = Image.open("images/tableau.png")
 # # Assets for gallery
 # # 2005
 # img_2005_1 = Image.open("gallery/2005_1.jpg")
@@ -316,7 +316,6 @@ def txt4(a, b):
         st.markdown(f'<p style="font-size: 25px; color: white;">{a}</p>', unsafe_allow_html=True)
         with col2: #can't seem to change color besides green
             st.markdown(f'<p style="font-size: 25px; color: red;"><code>{b}</code></p>', unsafe_allow_html=True)
-
 
 #####################
 
@@ -544,62 +543,59 @@ elif choose == "Technical Skills":
 #st.write("---")
 elif choose == "Education":
     st.header("Education")
-    selected_options = ["Summary", "Transcript/Degree"
-                        ]
-    selected = st.selectbox("Which section would you like to read?", options = selected_options)
-    st.write("Current selection:", selected)
-    if selected == "Summary":
-        st.subheader("Summary")
-        #st.write("*Summary of education from previous 2 university*")
-        with st.container():
-            image_column, text_column = st.columns((1,2.5))
-            with image_column:
-                st.image(img_koblenz)
-            with text_column:
-                st.subheader("Masters in Web and Data Science  - [University of Koblenz](https://www.uni-koblenz.de/de/) (April 2021 - Present)")
-                st.write("Coursework: Machine Learning, Data Science in Practice, Data Structures and Algorithms, Data Visualization, Database Technology and Management, Business Process Management, IT Management, Optimization for Large-Scale Data-Driven Inference, Probability, Programming Tools for Economics, Regression Analysis, Statistical Learning")
-                st.write("Master Thesis: Storytelling with Data: Making Trade Data more informative. (using Python) - Ongoing")
-#                 st.markdown("""
-#                 - [NUS Product Club](https://linkedin.com/company/nusproductclub) - Co-founder & President (2023-24)
-#                 - [NUS Statistics and Data Science Society](https://sites.google.com/view/nussds/home) - President (2022), Marketing Director (2021-22)
-#                 - [Google Developer Student Clubs NUS](https://dsc.comp.nus.edu.sg/) - Deputy Head of Finance (2021-22)
-#                 """)
-        with st.container():
-            image_column, text_column = st.columns((1,2.5))
-            with image_column:
-                st.image(img_mumbai)
-            with text_column:
-                st.subheader("Bachelor of Engineering - Information technology, [University of Mumbai](https://mu.ac.in/) (December 2015 - March 2019)")
-                st.write("Coursework: Python, Mathematics for Statistical Analysis, Machine Learning Foundation, Data Structure Algorithm, Internet of Things - IoT, Big Data, Quantitative Reasoning")
-                st.write("Bachelor Thesis: Landlside Detection Using IOT")
+    #selected_options = ["Summary", "Transcript/Degree"]
+    #selected = st.selectbox("Which section would you like to read?", options = selected_options)
+    #st.write("Current selection:", selected)
+    #if selected == "Summary":
+    st.subheader("Summary")
+    #st.write("*Summary of education from previous 2 university*")
+    with st.container():
+        image_column, text_column = st.columns((1,2.5))
+    with image_column:
+        st.image(img_koblenz)
+        with text_column:
+            st.subheader("Masters in Web and Data Science  - [University of Koblenz](https://www.uni-koblenz.de/de/) (April 2021 - Present)")
+            st.write("Coursework: Machine Learning, Data Science in Practice, Data Structures and Algorithms, Data Visualization, Database Technology and Management, Business Process Management, IT Management, Optimization for Large-Scale Data-Driven Inference, Probability, Programming Tools for Economics, Regression Analysis, Statistical Learning")
+            st.write("Master Thesis: Storytelling with Data: Making Trade Data more informative. (using Python) - Ongoing")
+            st.markdown(pdf_link('https://drive.google.com/file/d/1JQY8PAjzjF22r5Rg7CXO0Yo-LdarcuZ1/view?usp=sharing', "**Transcripts**"), unsafe_allow_html=True)
+    
+    with st.container():
+        image_column, text_column = st.columns((1,2.5))
+        with image_column:
+            st.image(img_mumbai)
+        with text_column:
+            st.subheader("Bachelor of Engineering - Information technology, [University of Mumbai](https://mu.ac.in/) (December 2015 - March 2019)")
+            st.write("Coursework: Python, Mathematics for Statistical Analysis, Machine Learning Foundation, Data Structure Algorithm, Internet of Things - IoT, Big Data, Quantitative Reasoning")
+            st.write("Bachelor Thesis: Landlside Detection Using IOT")
+            st.markdown(pdf_link('https://drive.google.com/file/d/1MB7Cexj6nG-lIZmunO15btegRRo0rmER/view?usp=sharing', "**Degree**"), unsafe_allow_html=True)
                 
-    elif selected == "Transcript/Degree":
-            st.subheader("Transcript/Degree")
-            resume_url = 'https://drive.google.com/file/d/1JQY8PAjzjF22r5Rg7CXO0Yo-LdarcuZ1/view?usp=sharing'
-            st.write("*Latest Transcripts of Masters Degree at University of Koblenz*")
-            with st.container():
-                st.markdown(pdf_link(resume_url, "**Transcripts**"), unsafe_allow_html=True)
-                show_pdf("Transcripts.pdf")
-            with open("Transcripts.pdf", "rb") as file:
-                btn = st.download_button(
-                    label="Download Transcripts",
-                    data=file,
-                    file_name="Transcripts.pdf",
-                    mime="application/pdf"
-                )
+#     elif selected == "Transcript/Degree":
+#             st.subheader("Transcript/Degree")
+#             resume_url = 'https://drive.google.com/file/d/1JQY8PAjzjF22r5Rg7CXO0Yo-LdarcuZ1/view?usp=sharing'
+#             st.write("*Latest Transcripts of Masters Degree at University of Koblenz*")
+#             with st.container():
+#                 st.markdown(pdf_link(resume_url, "**Transcripts**"), unsafe_allow_html=True)
+#                 show_pdf("Transcripts.pdf")
+#             with open("Transcripts.pdf", "rb") as file:
+#                 btn = st.download_button(
+#                     label="Download Transcripts",
+#                     data=file,
+#                     file_name="Transcripts.pdf",
+#                     mime="application/pdf"
+#                 )
                 
-                resume_url = 'https://drive.google.com/file/d/1MB7Cexj6nG-lIZmunO15btegRRo0rmER/view?usp=sharing'
-            st.write("*Bacheor's Degree at University of Mumbai*")
-            with st.container():
-                st.markdown(pdf_link(resume_url, "**Degree**"), unsafe_allow_html=True)
-                show_pdf("Degree.pdf")
-            with open("Degree.pdf", "rb") as file:
-                btn = st.download_button(
-                    label="Download Degree",
-                    data=file,
-                    file_name="Degree.pdf",
-                    mime="application/pdf"
-                )
+#                 resume_url = 'https://drive.google.com/file/d/1MB7Cexj6nG-lIZmunO15btegRRo0rmER/view?usp=sharing'
+#             st.write("*Bacheor's Degree at University of Mumbai*")
+#             with st.container():
+#                 st.markdown(pdf_link(resume_url, "**Degree**"), unsafe_allow_html=True)
+#                 show_pdf("Degree.pdf")
+#             with open("Degree.pdf", "rb") as file:
+#                 btn = st.download_button(
+#                     label="Download Degree",
+#                     data=file,
+#                     file_name="Degree.pdf",
+#                     mime="application/pdf"
+#                 )
 #             sem1, mid, sem2 = st.columns((1,0.1,1))
 #             with sem1:
 #                 st.write("**Academic Year 2019/20 Semester 1**")
