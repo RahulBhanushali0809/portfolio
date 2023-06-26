@@ -15,4 +15,4 @@ References:
 - https://github.com/Sven-Bo/streamlit-navigation-menu
 - https://github.com/insightsbees/streamlit_app_gallery 
 
-© 2023 Harry Chang
+© 2023 Rahul Bhanushali
