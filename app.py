@@ -102,18 +102,18 @@ img_3 = Image.open("images/3.jpeg")
 # # Assets for education
 # img_sji = Image.open("images/sji.jpg")
 # img_tpjc = Image.open("images/tpjc.jpg")
-img_koblenz = Image.open("images/koblenz.PNG")
-img_mumbai = Image.open("images/mumbai.PNG")
+img_koblenz = Image.open("images/koblenz.png")
+img_mumbai = Image.open("images/mumbai.png")
 # img_gmss = Image.open("images/gmss.jpg")
 # img_sjij = Image.open("images/sjij.jpg")
 # img_dsa = Image.open("images/dsa.jpg")
 # Assets for experiences
-img_tcs = Image.open("images/tcs.PNG")
+img_tcs = Image.open("images/tcs.png")
 # img_iasg = Image.open("images/iasg.jpg")
 # img_sshsph = Image.open("images/sshsph.jpg")
 # img_yll = Image.open("images/yll.jpg")
 # img_saf = Image.open("images/saf.jpg")
-img_Continental = Image.open("images/Continental.PNG")
+img_Continental = Image.open("images/Continental.png")
 # Assets for projects
 # image_names_projects = ["ecom", "chatgpt", "videogames", "health", 
 #                          "biopics", "anime", "word2vec", "cellphone", 
