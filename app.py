@@ -303,19 +303,20 @@ def txt2(a, b):
     #st.markdown(f'<p style="font-size: 20px; color: red;"></code>{b}</code></p>', unsafe_allow_html=True)
 
 def txt3(a, b):
-  col1, col2 = st.columns([1,4])
-  with col1:
-    st.markdown(f'<p style="font-size: 20px;">{a}</p>', unsafe_allow_html=True)
-  with col2:
-    b_no_commas = b.replace(',', '')
-    st.markdown(b_no_commas)
+    col1, col2 = st.columns([1,4])
+    with col1:
+        st.markdown(f'<p style="font-size: 20px;">{a}</p>', unsafe_allow_html=True)
+        with col2:
+            b_no_commas = b.replace(',', '')
+            st.markdown(b_no_commas)
 
 def txt4(a, b):
-  col1, col2 = st.columns([1.5,2])
-  with col1:
-    st.markdown(f'<p style="font-size: 25px; color: white;">{a}</p>', unsafe_allow_html=True)
-  with col2: #can't seem to change color besides green
-    st.markdown(f'<p style="font-size: 25px; color: red;"><code>{b}</code></p>', unsafe_allow_html=True)
+    col1, col2 = st.columns([1.5,2])
+    with col1:
+        st.markdown(f'<p style="font-size: 25px; color: white;">{a}</p>', unsafe_allow_html=True)
+        with col2: #can't seem to change color besides green
+            st.markdown(f'<p style="font-size: 25px; color: red;"><code>{b}</code></p>', unsafe_allow_html=True)
+
 
 #####################
 
