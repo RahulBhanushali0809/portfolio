@@ -254,6 +254,10 @@ img_linkedin = Image.open("images/linkedin.png")
 img_github = Image.open("images/github.png")
 img_email = Image.open("images/email.png")
 
+
+
+
+
 def social_icons(width=24, height=24, **kwargs):
         icon_template = '''
         <a href="{url}" target="_blank" style="margin-right: 20px;">
@@ -337,6 +341,20 @@ add_bg_from_local('bg.png')
 
 
 # Sidebar: If using streamlit_option_menu
+st.markdown(
+    """
+<style>
+.sidebar .sidebar-content {
+    background-image: linear-gradient(#2e7bcf,#2e7bcf);
+    color: white;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
+
+
 with st.sidebar:
     with st.container():
         l, m, r = st.columns((1,3,1))
