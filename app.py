@@ -141,7 +141,7 @@ img_Continental = Image.open("images/Continental.png")
 # img_dac1 = Image.open("images/dac1.png")
 # img_dac2 = Image.open("images/dac2.png")
 
-images_BI_Dashboard = Image.open("images/BI_Dashboard.png")
+images_BI_Dashboard = Image.open("images/BI_Dashboard.PNG")
 images_cert_1 = Image.open("images/certi_1.png")
 images_news = Image.open("images/news.png")
 images_tableau = Image.open("images/tableau.png")
