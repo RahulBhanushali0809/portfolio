@@ -87,7 +87,7 @@ def pdf_link(pdf_url, link_text="Click here to view PDF"):
 #lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 # Assets for about me
 img_utown = Image.open("images/4.jpeg")
-img_lh = Image.open("images/1.JPG")
+img_lh = Image.open("images/1.jpg")
 img_3 = Image.open("images/3.jpeg")
 
 #Assets for competitions
@@ -102,18 +102,18 @@ img_3 = Image.open("images/3.jpeg")
 # # Assets for education
 # img_sji = Image.open("images/sji.jpg")
 # img_tpjc = Image.open("images/tpjc.jpg")
-img_koblenz = Image.open("images/koblenz.png")
-img_mumbai = Image.open("images/mumbai.png")
+img_koblenz = Image.open("images/koblenz.PNG")
+img_mumbai = Image.open("images/mumbai.PNG")
 # img_gmss = Image.open("images/gmss.jpg")
 # img_sjij = Image.open("images/sjij.jpg")
 # img_dsa = Image.open("images/dsa.jpg")
 # Assets for experiences
-img_tcs = Image.open("images/tcs.png")
+img_tcs = Image.open("images/tcs.PNG")
 # img_iasg = Image.open("images/iasg.jpg")
 # img_sshsph = Image.open("images/sshsph.jpg")
 # img_yll = Image.open("images/yll.jpg")
 # img_saf = Image.open("images/saf.jpg")
-img_Continental = Image.open("images/Continental.png")
+img_Continental = Image.open("images/Continental.PNG")
 # Assets for projects
 # image_names_projects = ["ecom", "chatgpt", "videogames", "health", 
 #                          "biopics", "anime", "word2vec", "cellphone", 
@@ -141,10 +141,10 @@ img_Continental = Image.open("images/Continental.png")
 # img_dac1 = Image.open("images/dac1.png")
 # img_dac2 = Image.open("images/dac2.png")
 
-images_BI_Dashboard = Image.open("images/BI_Dashboard.png")
-images_cert_1 = Image.open("images/certi_1.png")
-images_news = Image.open("images/news.png")
-images_tableau = Image.open("images/tableau.png")
+images_BI_Dashboard = Image.open("images/BI_Dashboard.PNG")
+images_cert_1 = Image.open("images/certi_1.PNG")
+images_news = Image.open("images/news.PNG")
+images_tableau = Image.open("images/tableau.PNG")
 # # Assets for gallery
 # # 2005
 # img_2005_1 = Image.open("gallery/2005_1.jpg")
