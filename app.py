@@ -87,7 +87,7 @@ def pdf_link(pdf_url, link_text="Click here to view PDF"):
 #lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 # Assets for about me
 img_utown = Image.open("images/4.jpeg")
-img_lh = Image.open("images/1.JPG")
+img_lh = Image.open("images/1.jpg")
 img_3 = Image.open("images/3.jpeg")
 
 #Assets for competitions
