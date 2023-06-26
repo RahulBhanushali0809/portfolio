@@ -340,7 +340,19 @@ def add_bg_from_local(image_file):
 add_bg_from_local('bg.png')   
 
 
+
 # Sidebar: If using streamlit_option_menu
+
+
+st.markdown("""
+<style>
+    [data-testid=stSidebar] {
+        background-color: #f5f5dc;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+
 with st.sidebar:
     with st.container():
         l, m, r = st.columns((1,3,1))
