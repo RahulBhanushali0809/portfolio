@@ -407,7 +407,7 @@ if choose == "About Me":
             st.write("🏋🏻 In addition, I like to exercise in the gym, run, write, play video games and... enjoy eating good food in my free time!")
             st.write("👨🏼‍💻 Academic interests: Data Visualization, Supply-Demand Analysis, Acutal vs Budget Cost analysis, Market Basket Analysis, Recommendation Systems, ETL Pipeline Creations")
             st.write("💭 Ideal Career Prospects: Data Analyst, Data Scientist, Power BI developer, Data Engineer, Business Intelligence Analyst")
-            st.write("📄 [Resume (1 page)](https://drive.google.com/file/d/1WsTgFTNH_6e01TnYqjSczldJQCVfHSAD/view?usp=sharing)")
+            st.write("📄 [Resume (1 page)](https://drive.google.com/file/d/1lsl6kVF1DwUzF7vT9OS9K_FqiLCEKnNc/view?usp=sharing)")
         with middle_column:
             st.empty()
         with right_column:
@@ -2602,7 +2602,7 @@ elif choose == "Gallery":
             #st.write("...and now add `?analytics=on` to the URL to see the analytics dashboard 👀")
 
 elif choose == "Resume":   
-    resume_url = "https://drive.google.com/file/d/1WsTgFTNH_6e01TnYqjSczldJQCVfHSAD/view?usp=sharing"
+    resume_url = "https://drive.google.com/file/d/1lsl6kVF1DwUzF7vT9OS9K_FqiLCEKnNc/view?usp=sharing"
     st.header("Resume")
     st.write("*In case your current browser cannot display the PDF documents, do refer to the hyperlink below!*")
 
