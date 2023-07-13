@@ -401,7 +401,7 @@ if choose == "About Me":
         left_column, middle_column, right_column = st.columns((1,0.2,0.5))
         with left_column:
             st.header("About Me")
-            st.subheader("Aspiring Data Analyst/Data Scientist")
+            st.subheader("Data Analyst/Power BI Developer")
             st.write("👋🏻 Hi, I'm Rahul! I'm an aspiring Data Analyst/Data Scientist with a passion for unlocking insights from complex datasets, I am eager to contribute my skills and expertise to a full-time role in Germany/Europe. My analytical mindset and attention to detail enable me to uncover patterns, identify trends, and provide data-driven solutions to real-world problems.")
             st.write("💼 I just love the whole process of gathering and interpreting data from a variety of sources to help the organization improve the quality of sales and enhance the customer experience with the help of forecasting using Machine learning approaches. I'd love to automate internal and external reports, create executive-level dashboards, and present information to help executives and others to understand the operational impact of the data.")
             st.write("🏋🏻 In addition, I like to exercise in the gym, run, write, play video games and... enjoy eating good food in my free time!")
