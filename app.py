@@ -394,7 +394,7 @@ with st.sidebar:
 
 st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 st.title("Rahul Bhanushali")
-st.subheader("Data is the new oil, and analytics is the refinery")
+st.write("Data is the new oil, and analytics is the refinery")
 # Create header
 if choose == "About Me":
     #aboutme.createPage()
