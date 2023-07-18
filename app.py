@@ -140,7 +140,7 @@ img_Continental = Image.open("images/Continental.png")
 # img_bmsaew = Image.open("images/bmsaew.png")
 # img_dac1 = Image.open("images/dac1.png")
 # img_dac2 = Image.open("images/dac2.png")
-
+images_certificate = Image.open("images/Certificate.PNG")
 images_BI_Dashboard = Image.open("images/BI_Dashboard.PNG")
 images_cert_1 = Image.open("images/certi_1.PNG")
 images_news = Image.open("images/news.PNG")
@@ -402,7 +402,7 @@ if choose == "About Me":
         with left_column:
             st.header("About Me")
             st.subheader("Data Analyst/Power BI Developer")
-            st.write("👋🏻 Hi, I'm Rahul! I'm an aspiring Data Analyst/Data Scientist with a passion for unlocking insights from complex datasets, I am eager to contribute my skills and expertise to a full-time role in Germany/Europe. My analytical mindset and attention to detail enable me to uncover patterns, identify trends, and provide data-driven solutions to real-world problems.")
+            st.write("👋🏻 Hi, I'm Rahul! I'm a Data Analyst/Data Engineer with a passion for unlocking insights from complex datasets, I am eager to contribute my skills and expertise to a full-time role in Germany/Europe. My analytical mindset and attention to detail enable me to uncover patterns, identify trends, and provide data-driven solutions to real-world problems.")
             st.write("💼 I just love the whole process of gathering and interpreting data from a variety of sources to help the organization improve the quality of sales and enhance the customer experience with the help of forecasting using Machine learning approaches. I'd love to automate internal and external reports, create executive-level dashboards, and present information to help executives and others to understand the operational impact of the data.")
             st.write("🏋🏻 In addition, I like to exercise in the gym, run, write, play video games and... enjoy eating good food in my free time!")
             st.write("👨🏼‍💻 Academic interests: Data Visualization, Supply-Demand Analysis, Acutal vs Budget Cost analysis, Market Basket Analysis, Recommendation Systems, ETL Pipeline Creations")
@@ -793,6 +793,23 @@ elif choose == "Projects":
     # Create section for Projects
     #st.write("---")
     st.header("Projects")
+    with st.container():
+        text_column, image_column = st.columns((3,1))
+        with text_column:
+            st.subheader("Provide Insights to the Marketing Team in Food & Beverage Industry")
+            st.write("*Project Challenge by [Codebasics](https://codebasics.io/challenge/codebasics-resume-project-challenge)*")
+            #st.write("[Prof. Dr. Petra Shubert](https://www.uni-koblenz.de/de/informatik/iwvi/schubert/team/petra-schubert)")
+            #st.write("[Florian Shwade](https://www.linkedin.com/in/florian-schwade-1936b7101/)")
+            st.markdown("""
+            CodeX, a German beverage company, recently launched its energy drink in 10 cities across India. As a marketing data analyst, I had the opportunity to delve into the survey results from 10,000 respondents and provide valuable insights to the CodeX Marketing team.
+
+During my analysis, I focused on key metrics such as consumer preferences, purchase behavior, brand penetration, and competition analysis. 
+            """)
+            st.write("[Power BI Dashboard](https://www.novypro.com/project/indian-market-analysis---energy-drink-codex-brand)")
+            #mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/blockchain-webscraping",)
+        with image_column:
+              st.image(images_certificate)
+                
     with st.container():
         text_column, image_column = st.columns((3,1))
         with text_column:
@@ -2753,4 +2770,3 @@ elif choose == "Contact":
 #         with image_column:
 #             st.image(img_3)
 st.markdown("*Copyright © 2023 Rahul Bhanushali*")
-
